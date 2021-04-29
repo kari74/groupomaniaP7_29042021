@@ -1,0 +1,29 @@
+<template>
+<div class="d-flex flex-column align-items-center">
+    <h2 class="text-center subtitle pt-5 pb-4">Connexion</h2>
+    <p class="text-center font-italic">Connectez-vous pour accéder au forum !</p>
+    <Connexion/>
+</div>
+</template>
+
+<script>
+import Connexion from '../components/Connexion'
+
+export default {
+  name: 'Signup',
+  components: {
+  Connexion
+    }
+}
+</script>
+
+
+<style>
+.subtitle{
+    font-size: 2rem;
+    font-weight: bold;
+    color:#024601;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+}
+</style>
+
