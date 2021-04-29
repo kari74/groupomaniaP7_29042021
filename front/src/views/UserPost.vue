@@ -1,6 +1,6 @@
 <template>
-<div class="d-flex flex-column align-items-center">
-    <h2 class="text-center subtitle pt-5 pb-4">Le Mur</h2>
+<div class="mur">
+    <h2 class="text-center subtitle">Le Mur</h2>
     <p class="text-center font-italic">Ici, vous pouvez lire ce que vos collèques ont écrit ou partagé...</p>
     <Post/>
 </div>

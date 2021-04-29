@@ -1,6 +1,6 @@
 <template>
-<div class="d-flex flex-column align-items-center">
-    <h2 class="text-center subtitle pt-5 pb-4">Profil</h2>
+<div class="profil">
+    <h2 class="text-center subtitle">Profil</h2>
     <p class="text-center font-italic">Ici, vous pouvez modifier votre pseudo ou supprimer votre compte du forum...</p>
     <Profil/>
 </div>

@@ -1,6 +1,6 @@
 <template>
-<div class="w-50">
-    <form class="py-4">
+<div class="connexion">
+    <form class="connect">
     <div class="form-group">
         <label for="email">Adresse mail</label>
         <input type="email" class="form-control" id="email" v-model="email" required>

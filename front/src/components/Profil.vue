@@ -1,6 +1,6 @@
 <template>
-<div class="w-50">
-    <form class="py-4">
+<div class="profil">
+    <form class="new_profil">
         <div class="form-group">
             <label for="username">Nouveau pseudo</label>
             <input type="text" class="form-control" id="username" v-model="username">

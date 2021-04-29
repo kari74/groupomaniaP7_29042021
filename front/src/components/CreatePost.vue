@@ -1,6 +1,6 @@
 <template>
-<div class="w-50">
-    <form class="py-4">
+<div class="createpost">
+    <form class="post">
         <div class="form-group">
             <label for="title">Titre</label>
             <input type="text" class="form-control" id="title" v-model="title" max-length=50 required>
