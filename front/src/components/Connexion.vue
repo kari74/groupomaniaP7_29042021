@@ -46,7 +46,7 @@ export default {
                             console.error('Retour du serveur : ', response.status);
                         }
                 } catch (e) {
-                    console.log(e);
+                  console.log(e);
                 }
             }
             postForm(dataForm);
@@ -55,16 +55,15 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 .btn-submit-color{
     background-color: #024601;
     color:#f0e8c7;
     font-weight: bold;
-}
-.btn-submit-color:hover{
+        &:hover{
             font-weight:bold;
             background-color: #f0e8c7;
             color: #024601;
         }
-
+}
 </style>

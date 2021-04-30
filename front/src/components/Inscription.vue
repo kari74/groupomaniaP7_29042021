@@ -58,16 +58,15 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 .btn-submit-color{
     background-color: #024601;
     color:#f0e8c7;
     font-weight: bold;
-    }
-.btn-submit-color:hover{
-    font-weight:bold;
-    background-color: #f0e8c7;
-    color: #024601;
-    }
-
+        &:hover{
+            font-weight:bold;
+            background-color: #f0e8c7;
+            color: #024601;
+        }
+}
 </style>

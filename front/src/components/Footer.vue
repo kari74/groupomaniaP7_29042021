@@ -15,19 +15,18 @@ export default {
 </script>
 
 
-<style>
+<style scoped lang="scss">
 a{
   color:#fff;
-}
-a:hover{
+    &:hover{
       text-decoration: underline;
       font-weight: bold;
     }
-
-.footer{
+}
+.footer-bg{
   background-image: url("../assets/ile.jpg");
 }
-.mails{
+.text-company{
   font-size: 0.5rem;
   color:#fff;
 }

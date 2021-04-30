@@ -64,7 +64,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -75,22 +75,23 @@ export default {
 
 #nav{
   background-color: #f0e8c7;
-}
- #nav a {
+  a {
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 1.2rem;
     color:#303030 ;
-    }
-      #nav a:hover{
+      &:hover{
         color:#000;
       }
 
-    a.router-link-exact-active {
+    &.router-link-exact-active {
       color: #024601;
     }
+  }
+  }
 .bg-body{
   background-color: #f0e8c7;
 }
 
 </style>
+

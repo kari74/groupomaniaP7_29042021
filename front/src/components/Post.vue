@@ -1,7 +1,7 @@
 <template>
 <div>
         <div v-if="isAdmin === 'true'" class="admin">
-            <h3 class="manager-title">Le coin du modérateur...</h3>
+            <h3 class="manager-title"> modérateur...</h3>
             <input placeholder="Numéro du post" v-model="idPost">
         <button class="btn btn-submit-color" v-on:click="deletePost" >Supprimer l'article</button>
     </div>
@@ -55,7 +55,7 @@ export default {
         });
         if (response.ok) {
             let responseId = await response.json();
-            console.log(responseId)
+           console.log(responseId)
             location.reload();
         } else {
             console.error('Retour du serveur : ', response.status);
@@ -70,7 +70,7 @@ postForm(idPost);
 </script>
 
 
-<style>
+<style scoped lang="scss">
 .title-color {
     color:#024601;
 }
@@ -78,8 +78,7 @@ postForm(idPost);
     background-color: #024601;
     color:#f0e8c7;
     font-weight: bold;
-    }
-    .btn-submit-color:hover{
+        &:hover{
             font-weight:bold;
             background-color: #f0e8c7;
             color: #024601;
@@ -87,7 +86,7 @@ postForm(idPost);
 .line{
     color:#024601;
     }
-
+}
 .manager-title{
     font-size: 1.5rem;
     color:#024601;

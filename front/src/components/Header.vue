@@ -18,7 +18,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped lang="scss">
 .main-title{
     font-size: 1.5rem;
     color: #fff;
@@ -27,10 +27,10 @@ export default {
 .logo-title{
     width: 12rem;
 }
- .header{
+ .bg-header{
     background-image: url("../assets/ile.jpg");
  }
- .header-color{
+ .bg-header-color{
      background-color: #f0e8c7;
  }
  .title-size{
