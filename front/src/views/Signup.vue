@@ -18,7 +18,7 @@ export default {
 </script>
 
 
-<style scoped lang="scss">
+<style>
 .subtitle{
     font-size: 2rem;
     font-weight: bold;

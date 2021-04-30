@@ -15,14 +15,15 @@ export default {
 </script>
 
 
-<style scoped lang="scss">
+<style>
 a{
   color:#fff;
-    &:hover{
+}
+a:hover{
       text-decoration: underline;
       font-weight: bold;
     }
-}
+
 .footer-bg{
   background-image: url("../assets/ile.jpg");
 }

@@ -70,7 +70,7 @@ postForm(idPost);
 </script>
 
 
-<style scoped lang="scss">
+<style>
 .title-color {
     color:#024601;
 }
@@ -78,7 +78,8 @@ postForm(idPost);
     background-color: #024601;
     color:#f0e8c7;
     font-weight: bold;
-        &:hover{
+}
+.btn-submit-color:hover{
             font-weight:bold;
             background-color: #f0e8c7;
             color: #024601;
@@ -86,7 +87,7 @@ postForm(idPost);
 .line{
     color:#024601;
     }
-}
+
 .manager-title{
     font-size: 1.5rem;
     color:#024601;

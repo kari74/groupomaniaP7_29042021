@@ -18,7 +18,7 @@ export default {
 </script>
 
 
-<style scoped lang="scss">
+<style >
 .main-title{
     font-size: 1.5rem;
     color: #fff;
