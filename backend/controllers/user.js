@@ -87,9 +87,9 @@ exports.loginUser = (req, res, next) => {
                         )
                     });
                 })
-                .catch(error => res.status(500).json({ error }));
+                .catch(error => res.status(500).json({ error: 'erreur du serveur' }));
         })
-        .catch(error => res.status(500).json({ error }));
+        .catch(error => res.status(500).json({ error : 'utilisateur introuvable'}));
 };
 
 //delete user
