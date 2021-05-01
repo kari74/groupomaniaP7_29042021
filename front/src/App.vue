@@ -1,13 +1,55 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="app">
+
+        <header>
+            <div id="nav" class="bg-nav">
+                <!-- not connected -->
+                <div class="" v-if=" id === null ">
+                    <router-link to="/signup">Inscription</router-link> |
+                    <router-link to="/login">Connexion</router-link>
+                </div>
+                <!--  connected-->
+                <div class="" v-else>
+                    <router-link to="/allpost">Voir tous les posts</router-link> |
+                    <router-link to="/create">Créer un post</router-link> |
+                    <router-link to="/profil">Profil</router-link> |
+                <!--  <a href="#" v-on:click="exitUser">Exit</a>-->
+                </div>
+            </div>
+            <Header />
+        </header>
+          <router-view />
+
+        <footer>
+            <Footer/>
+        </footer>
+
     </div>
-    <router-view/>
-  </div>
+
 </template>
 
+<script>
+    import Header from './components/Header'
+    import Footer from './components/Footer'
+    export default {
+        name: 'App',
+        components: {
+            Header,
+            Footer
+        },
+        data() {
+            return {
+                id: ''
+            }
+        },
+        mounted() {
+            let idUser = localStorage.getItem('Id');
+            console.log(idUser);
+            this.id = idUser;
+        },
+        methods: {}
+    }
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

@@ -34,17 +34,17 @@ export default {
                     body: dataForm
                 });
                     if (response.ok) {
-                        let responseId = await response.json();
-                        console.log(responseId);
+                        //let responseId = await response.json();
+                        //console.log(responseId);
                         localStorage.removeItem('Id');
                         localStorage.removeItem('token');
                         localStorage.removeItem('isAdmin');
                         window.location.href = "http://localhost:8080/signup#/signup"
                     } else {
-                        console.error('Retour du serveur : ', response.status);
+                        //console.error('Retour du serveur : ', response.status);
                     }
             } catch (e) {
-            console.log(e);
+            //console.log(e);
             }
         }
         postForm(dataForm);
@@ -63,14 +63,14 @@ export default {
                     body: dataForm,
                 });
                     if (response.ok) {
-                        let responseId = await response.json();
-                        console.log(responseId);
+                        //let responseId = await response.json();
+                        //console.log(responseId);
                         //Répondre ok modifcation
                     } else {
-                        console.error('Retour du serveur : ', response.status);
+                       // console.error('Retour du serveur : ', response.status);
                     }
             } catch (e) {
-            console.log(e);
+            //console.log(e);
             }   
         }
 postForm(dataForm);

@@ -41,7 +41,8 @@ export default {
                             localStorage.setItem("token", responseId.token);
                             localStorage.setItem("isAdmin", responseId.isAdmin);
                             localStorage.setItem("email", responseId.email);
-                            location.replace(location.origin + "/signup#/allpost");
+                            //location.replace(location.origin + "/signup#/allpost");
+                            window.location.href ="http://localhost:8080/?#/";
                         } else {
                             console.error('Retour du serveur : ', response.status);
                         }
