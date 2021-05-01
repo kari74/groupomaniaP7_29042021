@@ -3,15 +3,15 @@
     <form class="newinscription">
         <div class="form-group">
             <label for="email">Adresse mail</label>
-            <input type="email" class="form-control" id="email" v-model="email" required>
+            <input type="email" class="form-control" style="margin:5px" id="email" v-model="email" required>
         </div>
         <div class="form-group">
             <label for="username">Pseudo</label>
-            <input type="text" class="form-control" id="username" v-model="username" required>
+            <input type="text" class="form-control" style="margin:5px" id="username" v-model="username" required>
         </div>
         <div class="form-group">
             <label for="password">Mot de passe</label>
-            <input type="password" class="form-control" id="password" v-model="password" required>
+            <input type="password" class="form-control" style="margin:5px" id="password" v-model="password" required>
         </div>
         <button type="submit" class="btn btn-submit-color" v-on:click="signUpUser">Inscription</button>
     </form>
@@ -58,7 +58,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
+.from-group{
+    margin: 10px;
+}
 .btn-submit-color{
     background-color: #024601;
     color:#f0e8c7;

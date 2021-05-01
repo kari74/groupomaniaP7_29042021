@@ -1,11 +1,12 @@
 <template>
 <div class="header">
     <div class="forum">
-        <h1 class="main-title"><span class='title-size'>Groupomania forum</span><br/>
+        <h1 class="main-title">Groupomania forum<br/>
          Partager vos idées, vos envies, vos besoins </h1>
         <div>
-            <img class="logo-title" src='../assets/white_logo.png' alt="Icone de Groupomania">
+            <img src='../assets/ile.jpg' alt="Icone de Groupomania">
         </div>
+ 
    </div>
 </div>
 </template>
@@ -21,7 +22,7 @@ export default {
 <style >
 .main-title{
     font-size: 1.5rem;
-    color: #fff;
+    color: rgb(202, 123, 123);
     font-family: Georgia, 'Times New Roman', Times, serif ;
 }
 .logo-title{

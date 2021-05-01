@@ -1,5 +1,8 @@
 <template>
 <div class="footer">
+       <div>
+            <img src='../assets/black_logo.png' alt="Icone de Groupomania">
+        </div>
       <a class="mention" href='#'>Mentions légales</a>
       <a class="mails" href='mailto:forumetsgroupomania@contact.com'>Contact</a>
   <div class="site">

@@ -23,6 +23,7 @@ export default {
             password: ''
             }
         },
+        
     methods: {
         loginUser() {
             let dataForm = JSON.stringify({email : this.email, password : this.password});

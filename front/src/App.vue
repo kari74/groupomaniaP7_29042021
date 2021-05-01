@@ -16,9 +16,12 @@
                 <!--  <a href="#" v-on:click="exitUser">Exit</a>-->
                 </div>
             </div>
-            <Header />
+            <Header/>
         </header>
+
+        <body>
           <router-view />
+        </body>
 
         <footer>
             <Footer/>
