@@ -47,7 +47,7 @@
         },
         mounted() {
             let idUser = localStorage.getItem('Id');
-            console.log(idUser);
+            //console.log(idUser);
             this.id = idUser;
         },
         methods: {}

@@ -42,7 +42,7 @@ export default {
                     });
                         if (response.ok) {
                             let responseId = await response.json();
-                            window.location.href = " http://localhost:8080/signup#/allpost";
+                            window.location.href=" http://localhost:8080/signup#/allpost";
                           console.log(responseId);
                         } else {
                             console.error('Retour du serveur : ', response.status);

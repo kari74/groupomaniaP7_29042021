@@ -1,10 +1,11 @@
+
 //app
 
 const express = require('express'); 
 const helmet = require("helmet"); 
 const bodyParser = require('body-parser'); 
 const Sequelize = require('sequelize'); //ORM 
-
+const cors = require ('cors')
 const app = express();
 const path = require('path');
 
@@ -39,7 +40,7 @@ app.use((req, res, next) => {
 app.use(helmet());
 
 //Middleware global : JSON
-app.use(bodyParser.json());
+app.use(express.json());
 
 //Routes
 app.use('/api/user', userRoutes);

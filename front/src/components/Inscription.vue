@@ -25,20 +25,22 @@ export default {
         email: '',
         username: '',
         password: '',
-        photo: ''
+        //photo: ''
         }
     },
     methods: {
         signUpUser() {
-            let dataForm = JSON.stringify({email: this.email, username: this.username, password: this.password, photo: this.photo});
+            let dataForm = JSON.stringify({email: this.email, username: this.username, password: this.password});
+            console.log(dataForm)
             async function signUp(dataForm) {
                 try {
-                let response = await fetch("http://localhost:3000/api/user/signup", {
+                let response = await fetch("http://localhost:3000/api/auth/user/signup", {
                     method: 'POST',
+                    body: dataForm,
+
                     headers: {
                         'content-type': 'application/json'
                     },
-                    body: dataForm,
                 });
                     if (response.ok) {
                         let responseId = await response.json();
@@ -52,7 +54,7 @@ export default {
                 }
             }
             signUp(dataForm)
-            window.location.href = "http://localhost:8080/signup#/login";
+            window.location.href="http://localhost:8080/#/login";
         }
     }
 }

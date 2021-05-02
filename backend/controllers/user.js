@@ -9,15 +9,19 @@ const models = require('../models');
 
 //inscription user
 exports.signUpUser = (req, res, next) => {
-
+    
     const email = req.body.email;
     const username = req.body.username;
     const password = req.body.password;
-    const photo = req.body.photo;
+    //const photo = req.body.photo;
+    console.log(email);
+    console.log(username);
+    console.log(password);
+    console.log(req.body)
 
     //Verification
-    if (email == null || username == null || password == null) {
-        return res.status(400).json({ 'error': 'missing parameters' })
+    if (email ==null || username ==null || password ==null) {
+         return res.status(400).json({ 'error': 'missing parameters' })
     }
 
     //Verify pseudo lenght, mail regex, password 
@@ -32,16 +36,18 @@ exports.signUpUser = (req, res, next) => {
                         email: email,
                         username: username,
                         password: bcryptedPassword,
-                        photo: photo,
+                        //photo: photo,
                         isAdmin: 0
                     })
-                        .then(function (newUser) {
-                            return res.status(201).json({
-                                'userId': newUser.id
-                            })
+                        .then(function () {
+                            return res.status(201).json(
+                               ' user create'
+                            )
                         })
                         .catch(function (err) {
-                            return res.status(500).json({ 'error': 'cannot add user' });
+                            //console.log(error)
+                            return res.status(500).json({ message:err.message});
+
                         })
                 })
             } else {
@@ -49,7 +55,7 @@ exports.signUpUser = (req, res, next) => {
             }
         })
         .catch(function (err) {
-            return res.status(500).json({ 'error': 'unable to verify user' });
+            return res.status(500).json({ message:err.message });
         })
 }
 
@@ -89,7 +95,8 @@ exports.loginUser = (req, res, next) => {
                 })
                 .catch(error => res.status(500).json({ error: 'erreur du serveur' }));
         })
-        .catch(error => res.status(500).json({ error : 'utilisateur introuvable'}));
+        .catch(error => res.status(500).json({ error : 'user introuvable'}));
+        console.log(req.body)
 };
 
 //delete user
