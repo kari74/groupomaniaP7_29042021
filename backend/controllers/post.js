@@ -20,20 +20,20 @@ console.log('salut');
   const id_users = req.body.id_users
   const title = req.body.title;
   const content = req.body.content;
-  const userId = req.body.userId;
+ // const userId = req.body.userId;
 console.log(req.body);
 
   //Verification
-  if (title == null || content == null) {
+  if (title === null || content === null) {
     return res.status(400).json({ 'error': 'missing parameters' })
   }
 
   //Create the post
   const newPost = models.Post.create({
-    id_users: id_users,
+   // id_users: id_users,
     title: title,
     content: content,
-    UserId: userId
+    UserId: id_users
   })
     .then(function (newPost) {
     console.log(newPost);
@@ -42,7 +42,8 @@ console.log(req.body);
       })
     })
     .catch(function (err) {
-      return res.status(500).json({ 'error': 'cannot add post' })
+    
+      return res.status(500).json({ message:err.message })
     })
 };
 
