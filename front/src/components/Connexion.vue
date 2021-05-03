@@ -29,7 +29,7 @@ export default {
             let dataForm = JSON.stringify({email : this.email, password : this.password});
             async function postForm(dataToSend) {
                 try {
-                    let response = await fetch("http://localhost:3000/api/auth/user/login", {
+                    let response = await fetch("http://localhost:3000/api/user/login", {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'
@@ -69,6 +69,4 @@ export default {
     color: #024601;
 
 }
-
-
 </style>

@@ -15,13 +15,13 @@ exports.getAllPost = (req, res, next) => {
 
 //CREATE A POST
 exports.addPost = (req, res, next) => {
-
+console.log('salut');
   //Params
   const id_users = req.body.id_users
   const title = req.body.title;
   const content = req.body.content;
   const userId = req.body.userId;
-
+console.log(req.body);
 
   //Verification
   if (title == null || content == null) {
@@ -36,6 +36,7 @@ exports.addPost = (req, res, next) => {
     UserId: userId
   })
     .then(function (newPost) {
+    console.log(newPost);
       return res.status(201).json({
         'postId': newPost.id
       })

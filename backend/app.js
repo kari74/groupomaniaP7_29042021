@@ -14,7 +14,7 @@ const postRoutes = require('./routes/post');
 const userRoutes = require('./routes/user');
 
 // Data base connexion A SUPPRIMER
- const sequelize = new Sequelize("database_development_groupomania", 'root', 'kari74', {
+const sequelize = new Sequelize("database_development_groupomania", 'root', 'kari74', {
     dialect: 'mysql',
     host: 'localhost'
   })  
@@ -25,8 +25,8 @@ const userRoutes = require('./routes/user');
      console.error('Unable to connect to the database:', error);
    }
 
-   const exportss = module.exports = {};
-   exports.sequelize = sequelize;
+//const exports = module.exports = {};
+app.sequelize = sequelize;
 
 //erreur CORS
 app.use((req, res, next) => {
@@ -41,6 +41,7 @@ app.use(helmet());
 
 //Middleware global : JSON
 app.use(express.json());
+app.use(cors());
 
 //Routes
 app.use('/api/user', userRoutes);

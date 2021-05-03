@@ -34,7 +34,7 @@ export default {
             console.log(dataForm)
             async function signUp(dataForm) {
                 try {
-                let response = await fetch("http://localhost:3000/api/auth/user/signup", {
+                let response = await fetch("http://localhost:3000/api/user/signup", {
                     method: 'POST',
                     body: dataForm,
 
