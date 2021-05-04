@@ -13,7 +13,7 @@
                     <router-link to="/allpost">Voir tous les posts</router-link> |
                     <router-link to="/create">Créer un post</router-link> |
                     <router-link to="/profil">Profil</router-link> |
-                <!--  <a href="#" v-on:click="exitUser">Exit</a>-->
+                  <a href="#" v-on:click="exitUser">Exit</a>
                 </div>
             </div>
             <Header/>
@@ -50,7 +50,16 @@
             //console.log(idUser);
             this.id = idUser;
         },
-        methods: {}
+        methods: {
+        exitUser (){
+            localStorage.removeItem('Id');
+            localStorage.removeItem('token');
+            localStorage.removeItem('isAdmin');
+            localStorage.removeItem('email');
+            location.replace(location.origin + "/signup#/signup");
+            location.reload();
+    }
+        }
     }
 </script>
 <style>
@@ -63,13 +72,13 @@
 }
 
 #nav{
-  background-color: #f0e8c7;
+  background-color: rgb(181, 186, 190);
   }
   a {
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 1.2rem;
-    color:#303030 ;
+    color: black;
     }
     a:hover{
         color:#000;

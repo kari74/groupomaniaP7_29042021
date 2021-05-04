@@ -62,7 +62,6 @@ exports.signUpUser = (req, res, next) => {
 //LOGIN USER
 exports.loginUser = (req, res, next) => {
     console.log(req.body.password)
-    
     const email = req.body.email
     models.User.findOne({
         where: { email: email }
@@ -77,7 +76,7 @@ exports.loginUser = (req, res, next) => {
                 .then(valid => {
                     //password incorrect
                     if (!valid) {
-                        return res.status(401).json({ error: 'Invalidd password !' });
+                        return res.status(401).json({ error: 'Invalid password !' });
                     }
                     // password correct, creation Token
                     res.status(200).json({

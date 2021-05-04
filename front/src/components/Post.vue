@@ -75,22 +75,22 @@ postForm(idPost);
     color:#024601;
 }
 .btn-submit-color{
-    background-color: #024601;
+    background-color: #6462eb;
     color:#f0e8c7;
     font-weight: bold;
 }
 .btn-submit-color:hover{
             font-weight:bold;
             background-color: #f0e8c7;
-            color: #024601;
+            color: #f02906;
         }
 .line{
-    color:#024601;
+    color:#f02906;
     }
 
 .manager-title{
     font-size: 1.5rem;
-    color:#024601;
+    color:#f02906;
     font-family: Georgia, 'Times New Roman', Times, serif ;
     }
 </style>

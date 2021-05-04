@@ -1,7 +1,7 @@
 <template>
 <div class="footer">
        <div>
-            <img src='../assets/black_logo.png' alt="Icone de Groupomania">
+            <img src='../assets/icon-above-font.png' alt="Icone de Groupomania">
         </div>
       <a class="mention" href='#'>Mentions légales</a>
       <a class="mails" href='mailto:forumetsgroupomania@contact.com'>Contact</a>
@@ -33,5 +33,8 @@ a:hover{
 .text-company{
   font-size: 0.5rem;
   color:#fff;
+}
+img{
+  width: 250px;
 }
 </style>

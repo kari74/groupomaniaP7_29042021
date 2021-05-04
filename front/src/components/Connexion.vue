@@ -59,7 +59,7 @@ export default {
 
 <style >
 .btn-submit-color{
-    background-color: #024601;
+    background-color: #6462eb;
     color:#f0e8c7;
     font-weight: bold;
 }

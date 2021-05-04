@@ -4,7 +4,7 @@
         <h1 class="main-title">Groupomania forum<br/>
          Partager vos idées, vos envies, vos besoins </h1>
         <div>
-            <img src='../assets/ile.jpg' alt="Icone de Groupomania">
+            <img src='../assets/icon-left-font-monochrome-black.png' alt="Icone de Groupomania">
         </div>
  
    </div>
@@ -20,16 +20,19 @@ export default {
 
 
 <style >
+.header{
+    background: slategrey;
+}
 .main-title{
     font-size: 1.5rem;
-    color: rgb(202, 123, 123);
+    color:black;
     font-family: Georgia, 'Times New Roman', Times, serif ;
 }
 .logo-title{
     width: 12rem;
 }
  .bg-header{
-    background-image: url("../assets/ile.jpg");
+    background-image: url("../assets/icon-left-font-monochrome-white.png");
  }
  .bg-header-color{
      background-color: #f0e8c7;
