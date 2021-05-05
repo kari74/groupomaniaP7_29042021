@@ -66,14 +66,14 @@ export default {
     margin: 10px;
 }
 .btn-submit-color{
-    background-color: #6462eb;
-    color:#f0e8c7;
+    background-color: #bbbaf3;
+    color: black;
     font-weight: bold;
 }
 .btn-submit-color:hover{
             font-weight:bold;
             background-color: #f0e8c7;
-            color:#f02906;
+            color:#1e49d6;
 }
 
 </style>
